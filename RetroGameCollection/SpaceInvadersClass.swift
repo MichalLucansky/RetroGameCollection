@@ -165,7 +165,7 @@ class SpaceInvadersClass: SKScene, SKPhysicsContactDelegate {
         
         
         let bossInvader = SKSpriteNode()
-        let texture = SKTexture(imageNamed: String(format: "ivaderBoss.png"))
+        let texture = SKTexture(imageNamed: String(format: "invaderBoss.png"))
         
         let asteroidCategoryMask : UInt32 = 0x1 << 1
         let asteroidCollisionMask : UInt32 = 0x1 << 2
@@ -480,7 +480,7 @@ class SpaceInvadersClass: SKScene, SKPhysicsContactDelegate {
             
             switch proposedMoveDirection{
             case.right:
-                if (node.position.x >= CGFloat(320)) {
+                if (node.position.x >= CGFloat(300)) {
                     
                     self.invaderMovementDirection = .downLeft
                     
@@ -488,7 +488,7 @@ class SpaceInvadersClass: SKScene, SKPhysicsContactDelegate {
                     
                 }
             case.left:
-                if (node.position.x <= CGFloat(-320)){
+                if (node.position.x <= CGFloat(-300)){
                     
                     
                     self.invaderMovementDirection = .downRight
@@ -680,6 +680,7 @@ class SpaceInvadersClass: SKScene, SKPhysicsContactDelegate {
             if soundStatus.bool(forKey: "SOUNDSTATUS"){
                 self.run(SKAction.playSoundFileNamed("explosion.wav", waitForCompletion: false))
             }
+            
             let shipToDelete = SpaceInvadersClass.shipLiveCount.removeLast()
             SpaceInvadersClass.lifeCount -= 1
             shipToDelete.removeFromParent()
