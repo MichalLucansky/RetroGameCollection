@@ -15,7 +15,7 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
     private var highScore = UserDefaults.standard
     private var playerPadle = Player()
     private var ball = SKSpriteNode()
-    private var brick = SKSpriteNode()
+    private var bricks = [SKSpriteNode]()
     private var score = Int()
     private var obstacle = Utilities()
     private var scoreLabel = SKLabelNode()
@@ -33,6 +33,7 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
     private var brickCount = 0
     static var scoreToPass = Int()
     private var gameId = UserDefaults.standard
+    private let textures: [Int: String] = [0: "texture1", 1: "texture2",2: "texture3",3: "texture4",4: "texture5",5: "texture6",6: "texture8",7: "texture9",8: "texture10"]
     
     
     override func didMove(to view: SKView) {
@@ -123,9 +124,7 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
     
     
     private func initialization(){
-        
-        
-        
+
         scoreLabel.text = "SCORE: \(score)"
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         border.friction = 0
@@ -133,11 +132,19 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
         self.physicsBody = border
         
         self.physicsWorld.contactDelegate = self
-        
-        
-        
-        
+        let texture = SKTexture(imageNamed: textures[Int(randomNumber.randomNumberGenerator(start: 0, end: 8))] ?? "texture1")
+        if let children = scene?.children {
+            for child in children {
+                if child.name == "brick"{
+                    
+                    let brick = child as! SKSpriteNode
+                    brick.texture = texture
+                }
+            }
+        }
+
         playerPadle = childNode(withName: "Player") as! Player
+        playerPadle.texture = SKTexture(imageNamed: "texture7")
         ball = childNode(withName: "ball") as! SKSpriteNode
         scoreLabel = childNode(withName: "Score") as! SKLabelNode
         menuLabel = childNode(withName: "EndGame") as! SKLabelNode
