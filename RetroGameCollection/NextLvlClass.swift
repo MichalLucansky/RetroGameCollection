@@ -48,7 +48,7 @@ class NextLvlClass: SKScene{
                             
                             if let scene = BlockBreaker(fileNamed: "BlockBreakerScene") {
                                 
-                                scene.scaleMode = .aspectFill
+                                scene.scaleMode = .aspectFit
                                 
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -63,7 +63,7 @@ class NextLvlClass: SKScene{
                             
                             if let scene = SpaceInvadersClass(fileNamed: "SpaceInvadersScene") {
                                 
-                                scene.scaleMode = .aspectFill
+                                scene.scaleMode = .aspectFit
                                 
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -78,7 +78,7 @@ class NextLvlClass: SKScene{
                 case "BackToMenu" :
                     if let view = self.view {
                         if let scene = MainMenu(fileNamed: "MainMenu") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         

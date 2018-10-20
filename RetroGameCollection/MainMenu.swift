@@ -61,7 +61,7 @@ class MainMenu: SKScene{
                         // Load the SKScene from 'GameScene.sks'
                         if let scene = PongMultiSingleSel(fileNamed: "PongMultiSingleSel") {
                             // Set the scale mode to scale to fit the window
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             
                             // Present the scene
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -73,7 +73,7 @@ class MainMenu: SKScene{
                 case "BlockBreaker" :
                     if let view = self.view {
                         if let scene = BlockBreaker(fileNamed: "BlockBreakerScene") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         
@@ -82,7 +82,7 @@ class MainMenu: SKScene{
                 case "SpaceInvaders" :
                     if let view = self.view {
                         if let scene = SpaceInvadersClass(fileNamed: "SpaceInvadersScene") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         
@@ -91,7 +91,7 @@ class MainMenu: SKScene{
                 case "Snake" :
                     if let view = self.view {
                         if let scene = GameScene(fileNamed: "GameScene") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         
@@ -100,7 +100,7 @@ class MainMenu: SKScene{
                 case "Settings" :
                     if let view = self.view {
                         if let scene = Settings(fileNamed: "Settings") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         
@@ -110,7 +110,7 @@ class MainMenu: SKScene{
                 case "Credits" :
                     if let view = self.view {
                         if let scene = Credits(fileNamed: "Credits") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         

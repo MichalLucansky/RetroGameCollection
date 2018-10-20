@@ -1,0 +1,6 @@
+framework module Pods_RetroGameCollection {
+  umbrella header "Pods-RetroGameCollection-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -76,7 +76,7 @@ class BlockBreakerGameOver: SKScene {
                             // Load the SKScene from 'GameScene.sks'
                             if let scene = BlockBreaker(fileNamed: "BlockBreakerScene") {
                                 // Set the scale mode to scale to fit the window
-                                scene.scaleMode = .aspectFill
+                                scene.scaleMode = .aspectFit
                                 
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))                        }
@@ -90,7 +90,7 @@ class BlockBreakerGameOver: SKScene {
                             // Load the SKScene from 'GameScene.sks'
                             if let scene = SpaceInvadersClass(fileNamed: "SpaceInvadersScene") {
                                 // Set the scale mode to scale to fit the window
-                                scene.scaleMode = .aspectFill
+                                scene.scaleMode = .aspectFit
                                 
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -105,7 +105,7 @@ class BlockBreakerGameOver: SKScene {
                             // Load the SKScene from 'GameScene.sks'
                             if let scene = GameScene(fileNamed: "GameScene") {
                                 // Set the scale mode to scale to fit the window
-                                scene.scaleMode = .aspectFill
+                                scene.scaleMode = .aspectFit
                                 
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -121,7 +121,7 @@ class BlockBreakerGameOver: SKScene {
                 case "BackToMenu" :
                     if let view = self.view {
                         if let scene = MainMenu(fileNamed: "MainMenu") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         

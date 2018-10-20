@@ -166,7 +166,7 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
                     
                     if let view = self.view {
                         if let scene = BlockBreakerGameOver(fileNamed: "BlockBreakerGameOver") {
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
                         
@@ -299,7 +299,7 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
                 // Load the SKScene from 'GameOverScene'
                 if let scene = BlockBreakerGameOver(fileNamed: "BlockBreakerGameOver") {
                     // Set the scale mode to scale to fit the window
-                    scene.scaleMode = .aspectFill
+                    scene.scaleMode = .aspectFit
                     
                     // Present the scene
                     view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -327,7 +327,7 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
                 // Load the SKScene from 'GameOverScene'
                 if let scene = NextLvlClass(fileNamed: "NextLvlScene") {
                     // Set the scale mode to scale to fit the window
-                    scene.scaleMode = .aspectFill
+                    scene.scaleMode = .aspectFit
                     
                     // Present the scene
                     view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))

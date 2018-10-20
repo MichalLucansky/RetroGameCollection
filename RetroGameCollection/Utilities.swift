@@ -15,6 +15,7 @@ class Utilities: SKScene {
     func randomSpriteGenerator(position: CGPoint, width: CGFloat, height: CGFloat) -> SKSpriteNode{
         
         let obstacle = SKSpriteNode()
+        obstacle.texture = SKTexture(imageNamed: "moss_Texture")
         obstacle.size.height = 40
         obstacle.size.width = width
         obstacle.position = position
@@ -40,6 +41,9 @@ class Utilities: SKScene {
     func staticSpriteGenerator(position: CGPoint, width : CGFloat) -> SKSpriteNode{
         
         let staticObstacle = SKSpriteNode()
+        let texturee:SKTexture = SKTexture(imageNamed: "texture")
+        staticObstacle.texture = texturee
+        
         staticObstacle.size.height = 40
         staticObstacle.size.width = width
         staticObstacle.position = position

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3705F021214E44D6006041DA /* LoadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705F020214E44D6006041DA /* LoadingScene.swift */; };
 		374286BF1EEFD63E001CFF2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374286BD1EEFD63E001CFF2F /* Main.storyboard */; };
 		374286C11EEFD63E001CFF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374286C01EEFD63E001CFF2F /* Assets.xcassets */; };
 		374286C41EEFD63E001CFF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374286C21EEFD63E001CFF2F /* LaunchScreen.storyboard */; };
@@ -49,59 +50,17 @@
 		3742878D1EEFF9BB001CFF2F /* EndGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742878C1EEFF9BB001CFF2F /* EndGame.swift */; };
 		374287901EEFF9EA001CFF2F /* WinningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3742878F1EEFF9EA001CFF2F /* WinningScene.sks */; };
 		374287921EEFFA00001CFF2F /* WinningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287911EEFFA00001CFF2F /* WinningScene.swift */; };
-		374287991EEFFAFA001CFF2F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374287971EEFFAFA001CFF2F /* Interface.storyboard */; };
-		3742879B1EEFFAFA001CFF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3742879A1EEFFAFA001CFF2F /* Assets.xcassets */; };
-		374287A21EEFFAFB001CFF2F /* RoundPong Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 374287A11EEFFAFB001CFF2F /* RoundPong Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		374287A71EEFFAFB001CFF2F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287A61EEFFAFB001CFF2F /* InterfaceController.swift */; };
-		374287A91EEFFAFB001CFF2F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 374287A81EEFFAFB001CFF2F /* GameScene.sks */; };
-		374287AB1EEFFAFB001CFF2F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287AA1EEFFAFB001CFF2F /* GameScene.swift */; };
-		374287AD1EEFFAFB001CFF2F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287AC1EEFFAFB001CFF2F /* ExtensionDelegate.swift */; };
-		374287AF1EEFFAFB001CFF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374287AE1EEFFAFB001CFF2F /* Assets.xcassets */; };
-		374287B31EEFFAFB001CFF2F /* RoundPong.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 374287951EEFFAFA001CFF2F /* RoundPong.app */; };
-		374287BD1EEFFC9F001CFF2F /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287BC1EEFFC9F001CFF2F /* FirstController.swift */; };
-		374287BF1EF019A2001CFF2F /* PlayerPaddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287BE1EF019A2001CFF2F /* PlayerPaddle.swift */; };
-		374287C11EF019D1001CFF2F /* CircleBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287C01EF019D1001CFF2F /* CircleBorder.swift */; };
-		374287C31EF019F3001CFF2F /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287C21EF019F3001CFF2F /* Ball.swift */; };
-		374287C51EF01A11001CFF2F /* LabelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374287C41EF01A11001CFF2F /* LabelCreator.swift */; };
 		374287C71EF043E8001CFF2F /* LCDPHONE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 374287C61EF043E8001CFF2F /* LCDPHONE.TTF */; };
+		62D2D3A68AA2718574E97BF0 /* Pods_RetroGameCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7218E25DBA38C1F6190AFD5D /* Pods_RetroGameCollection.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		374287A31EEFFAFB001CFF2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 374286A81EEFD63E001CFF2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 374287A01EEFFAFB001CFF2F;
-			remoteInfo = "RoundPong Extension";
-		};
-		374287B11EEFFAFB001CFF2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 374286A81EEFD63E001CFF2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 374287941EEFFAFA001CFF2F;
-			remoteInfo = RoundPong;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		374287B71EEFFAFB001CFF2F /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				374287A21EEFFAFB001CFF2F /* RoundPong Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		374287BB1EEFFAFB001CFF2F /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				374287B31EEFFAFB001CFF2F /* RoundPong.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D5EF6C39C62BE1E42B711C0 /* Pods-RetroGameCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroGameCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RetroGameCollection/Pods-RetroGameCollection.debug.xcconfig"; sourceTree = "<group>"; };
+		3705F020214E44D6006041DA /* LoadingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScene.swift; sourceTree = "<group>"; };
 		374286B01EEFD63E001CFF2F /* RetroGameCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroGameCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374286BE1EEFD63E001CFF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		374286C01EEFD63E001CFF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,23 +114,9 @@
 		3742878C1EEFF9BB001CFF2F /* EndGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGame.swift; sourceTree = "<group>"; };
 		3742878F1EEFF9EA001CFF2F /* WinningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WinningScene.sks; sourceTree = "<group>"; };
 		374287911EEFFA00001CFF2F /* WinningScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningScene.swift; sourceTree = "<group>"; };
-		374287951EEFFAFA001CFF2F /* RoundPong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundPong.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		374287981EEFFAFA001CFF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		3742879A1EEFFAFA001CFF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3742879C1EEFFAFA001CFF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		374287A11EEFFAFB001CFF2F /* RoundPong Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RoundPong Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		374287A61EEFFAFB001CFF2F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		374287A81EEFFAFB001CFF2F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		374287AA1EEFFAFB001CFF2F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		374287AC1EEFFAFB001CFF2F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		374287AE1EEFFAFB001CFF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		374287B01EEFFAFB001CFF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		374287BC1EEFFC9F001CFF2F /* FirstController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
-		374287BE1EF019A2001CFF2F /* PlayerPaddle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerPaddle.swift; sourceTree = "<group>"; };
-		374287C01EF019D1001CFF2F /* CircleBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleBorder.swift; sourceTree = "<group>"; };
-		374287C21EF019F3001CFF2F /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
-		374287C41EF01A11001CFF2F /* LabelCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCreator.swift; sourceTree = "<group>"; };
 		374287C61EF043E8001CFF2F /* LCDPHONE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LCDPHONE.TTF; sourceTree = "<group>"; };
+		7218E25DBA38C1F6190AFD5D /* Pods_RetroGameCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetroGameCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8AAB5F98DD5CE401C2282A /* Pods-RetroGameCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroGameCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-RetroGameCollection/Pods-RetroGameCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,13 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3742879E1EEFFAFB001CFF2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				62D2D3A68AA2718574E97BF0 /* Pods_RetroGameCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,9 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				374286B21EEFD63E001CFF2F /* RetroGameCollection */,
-				374287961EEFFAFA001CFF2F /* RoundPong */,
-				374287A51EEFFAFB001CFF2F /* RoundPong Extension */,
 				374286B11EEFD63E001CFF2F /* Products */,
+				69CFBD32E8C5D889EB949A29 /* Pods */,
+				EAC9FF8B39AED77F6A694E61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,8 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				374286B01EEFD63E001CFF2F /* RetroGameCollection.app */,
-				374287951EEFFAFA001CFF2F /* RoundPong.app */,
-				374287A11EEFFAFB001CFF2F /* RoundPong Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +173,7 @@
 				374286C51EEFD63E001CFF2F /* Info.plist */,
 				374287521EEFD9C2001CFF2F /* AppDelegate.swift */,
 				374287541EEFD9EF001CFF2F /*  GameViewController.swift */,
+				3705F020214E44D6006041DA /* LoadingScene.swift */,
 			);
 			path = RetroGameCollection;
 			sourceTree = "<group>";
@@ -445,32 +385,21 @@
 			name = "WiningScene Pong";
 			sourceTree = "<group>";
 		};
-		374287961EEFFAFA001CFF2F /* RoundPong */ = {
+		69CFBD32E8C5D889EB949A29 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				374287971EEFFAFA001CFF2F /* Interface.storyboard */,
-				3742879A1EEFFAFA001CFF2F /* Assets.xcassets */,
-				3742879C1EEFFAFA001CFF2F /* Info.plist */,
+				2D5EF6C39C62BE1E42B711C0 /* Pods-RetroGameCollection.debug.xcconfig */,
+				FE8AAB5F98DD5CE401C2282A /* Pods-RetroGameCollection.release.xcconfig */,
 			);
-			path = RoundPong;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		374287A51EEFFAFB001CFF2F /* RoundPong Extension */ = {
+		EAC9FF8B39AED77F6A694E61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				374287BC1EEFFC9F001CFF2F /* FirstController.swift */,
-				374287A61EEFFAFB001CFF2F /* InterfaceController.swift */,
-				374287A81EEFFAFB001CFF2F /* GameScene.sks */,
-				374287AA1EEFFAFB001CFF2F /* GameScene.swift */,
-				374287AC1EEFFAFB001CFF2F /* ExtensionDelegate.swift */,
-				374287AE1EEFFAFB001CFF2F /* Assets.xcassets */,
-				374287B01EEFFAFB001CFF2F /* Info.plist */,
-				374287BE1EF019A2001CFF2F /* PlayerPaddle.swift */,
-				374287C01EF019D1001CFF2F /* CircleBorder.swift */,
-				374287C21EF019F3001CFF2F /* Ball.swift */,
-				374287C41EF01A11001CFF2F /* LabelCreator.swift */,
+				7218E25DBA38C1F6190AFD5D /* Pods_RetroGameCollection.framework */,
 			);
-			path = "RoundPong Extension";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,54 +409,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 374286C81EEFD63E001CFF2F /* Build configuration list for PBXNativeTarget "RetroGameCollection" */;
 			buildPhases = (
+				F67ABA454906AE7C11581A51 /* [CP] Check Pods Manifest.lock */,
 				374286AC1EEFD63E001CFF2F /* Sources */,
 				374286AD1EEFD63E001CFF2F /* Frameworks */,
 				374286AE1EEFD63E001CFF2F /* Resources */,
 				374287BB1EEFFAFB001CFF2F /* Embed Watch Content */,
+				3705F01F214E3E28006041DA /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				374287B21EEFFAFB001CFF2F /* PBXTargetDependency */,
 			);
 			name = RetroGameCollection;
 			productName = RetroGameCollection;
 			productReference = 374286B01EEFD63E001CFF2F /* RetroGameCollection.app */;
 			productType = "com.apple.product-type.application";
-		};
-		374287941EEFFAFA001CFF2F /* RoundPong */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 374287B81EEFFAFB001CFF2F /* Build configuration list for PBXNativeTarget "RoundPong" */;
-			buildPhases = (
-				374287931EEFFAFA001CFF2F /* Resources */,
-				374287B71EEFFAFB001CFF2F /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				374287A41EEFFAFB001CFF2F /* PBXTargetDependency */,
-			);
-			name = RoundPong;
-			productName = RoundPong;
-			productReference = 374287951EEFFAFA001CFF2F /* RoundPong.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		374287A01EEFFAFB001CFF2F /* RoundPong Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 374287B41EEFFAFB001CFF2F /* Build configuration list for PBXNativeTarget "RoundPong Extension" */;
-			buildPhases = (
-				3742879D1EEFFAFB001CFF2F /* Sources */,
-				3742879E1EEFFAFB001CFF2F /* Frameworks */,
-				3742879F1EEFFAFB001CFF2F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RoundPong Extension";
-			productName = "RoundPong Extension";
-			productReference = 374287A11EEFFAFB001CFF2F /* RoundPong Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -543,17 +439,7 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A9YN63GW95;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
-					};
-					374287941EEFFAFA001CFF2F = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = A9YN63GW95;
-						ProvisioningStyle = Automatic;
-					};
-					374287A01EEFFAFB001CFF2F = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = A9YN63GW95;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -571,8 +457,6 @@
 			projectRoot = "";
 			targets = (
 				374286AF1EEFD63E001CFF2F /* RetroGameCollection */,
-				374287941EEFFAFA001CFF2F /* RoundPong */,
-				374287A01EEFFAFB001CFF2F /* RoundPong Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -610,25 +494,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		374287931EEFFAFA001CFF2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3742879B1EEFFAFA001CFF2F /* Assets.xcassets in Resources */,
-				374287991EEFFAFA001CFF2F /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3742879F1EEFFAFB001CFF2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				374287AF1EEFFAFB001CFF2F /* Assets.xcassets in Resources */,
-				374287A91EEFFAFB001CFF2F /* GameScene.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3705F01F214E3E28006041DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 00c9fd22a319ef43965daa28226fabc6401b160c a2c38b1b573b9e4cd82ef2416cd30410eb3bfbebd147740fad21529226282a82";
+		};
+		F67ABA454906AE7C11581A51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RetroGameCollection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		374286AC1EEFD63E001CFF2F /* Sources */ = {
@@ -650,41 +550,14 @@
 				3742878D1EEFF9BB001CFF2F /* EndGame.swift in Sources */,
 				374287531EEFD9C2001CFF2F /* AppDelegate.swift in Sources */,
 				374287741EEFF375001CFF2F /* BlockBreakerGameOver.swift in Sources */,
+				3705F021214E44D6006041DA /* LoadingScene.swift in Sources */,
 				3742875C1EEFF11B001CFF2F /* GameScene.swift in Sources */,
 				3742876F1EEFF31E001CFF2F /* NextLvlClass.swift in Sources */,
 				374286DC1EEFD8F9001CFF2F /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3742879D1EEFFAFB001CFF2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				374287BD1EEFFC9F001CFF2F /* FirstController.swift in Sources */,
-				374287AB1EEFFAFB001CFF2F /* GameScene.swift in Sources */,
-				374287BF1EF019A2001CFF2F /* PlayerPaddle.swift in Sources */,
-				374287A71EEFFAFB001CFF2F /* InterfaceController.swift in Sources */,
-				374287AD1EEFFAFB001CFF2F /* ExtensionDelegate.swift in Sources */,
-				374287C51EF01A11001CFF2F /* LabelCreator.swift in Sources */,
-				374287C31EF019F3001CFF2F /* Ball.swift in Sources */,
-				374287C11EF019D1001CFF2F /* CircleBorder.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		374287A41EEFFAFB001CFF2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 374287A01EEFFAFB001CFF2F /* RoundPong Extension */;
-			targetProxy = 374287A31EEFFAFB001CFF2F /* PBXContainerItemProxy */;
-		};
-		374287B21EEFFAFB001CFF2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 374287941EEFFAFA001CFF2F /* RoundPong */;
-			targetProxy = 374287B11EEFFAFB001CFF2F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		374286BD1EEFD63E001CFF2F /* Main.storyboard */ = {
@@ -701,14 +574,6 @@
 				374286C31EEFD63E001CFF2F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		374287971EEFFAFA001CFF2F /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				374287981EEFFAFA001CFF2F /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -809,100 +674,43 @@
 		};
 		374286C91EEFD63E001CFF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5EF6C39C62BE1E42B711C0 /* Pods-RetroGameCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = A9YN63GW95;
 				INFOPLIST_FILE = RetroGameCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.RetroGameCollection;
+				PRODUCT_BUNDLE_IDENTIFIER = sk.michal.lucansky.RetroGameCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a14fee3b-f550-4d06-8400-df505b710a96";
+				PROVISIONING_PROFILE_SPECIFIER = "Retro Games";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		374286CA1EEFD63E001CFF2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8AAB5F98DD5CE401C2282A /* Pods-RetroGameCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = A9YN63GW95;
 				INFOPLIST_FILE = RetroGameCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.RetroGameCollection;
+				PRODUCT_BUNDLE_IDENTIFIER = sk.michal.lucansky.RetroGameCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a14fee3b-f550-4d06-8400-df505b710a96";
+				PROVISIONING_PROFILE_SPECIFIER = "Retro Games";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		374287B51EEFFAFB001CFF2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = A9YN63GW95;
-				INFOPLIST_FILE = "RoundPong Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.RetroGameCollection.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		374287B61EEFFAFB001CFF2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = A9YN63GW95;
-				INFOPLIST_FILE = "RoundPong Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.RetroGameCollection.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
-		374287B91EEFFAFB001CFF2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A9YN63GW95;
-				IBSC_MODULE = RoundPong_Extension;
-				INFOPLIST_FILE = RoundPong/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.RetroGameCollection.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		374287BA1EEFFAFB001CFF2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A9YN63GW95;
-				IBSC_MODULE = RoundPong_Extension;
-				INFOPLIST_FILE = RoundPong/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.RetroGameCollection.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -923,24 +731,6 @@
 			buildConfigurations = (
 				374286C91EEFD63E001CFF2F /* Debug */,
 				374286CA1EEFD63E001CFF2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		374287B41EEFFAFB001CFF2F /* Build configuration list for PBXNativeTarget "RoundPong Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				374287B51EEFFAFB001CFF2F /* Debug */,
-				374287B61EEFFAFB001CFF2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		374287B81EEFFAFB001CFF2F /* Build configuration list for PBXNativeTarget "RoundPong" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				374287B91EEFFAFB001CFF2F /* Debug */,
-				374287BA1EEFFAFB001CFF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

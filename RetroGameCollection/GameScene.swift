@@ -270,7 +270,7 @@ class GameScene: SKScene {
                         // Load the SKScene from 'GameScene.sks'
                         if let scene = BlockBreakerGameOver(fileNamed: "BlockBreakerGameOver") {
                             // Set the scale mode to scale to fit the window
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             
                             // Present the scene
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -521,7 +521,7 @@ class GameScene: SKScene {
                     // Load the SKScene from 'GameScene.sks'
                     if let scene = BlockBreakerGameOver(fileNamed: "BlockBreakerGameOver") {
                         // Set the scale mode to scale to fit the window
-                        scene.scaleMode = .aspectFill
+                        scene.scaleMode = .aspectFit
                         
                         // Present the scene
                         view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))

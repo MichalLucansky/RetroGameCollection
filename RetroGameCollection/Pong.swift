@@ -266,7 +266,7 @@ class Pong: SKScene, SKPhysicsContactDelegate {
                         // Load the SKScene from 'GameScene.sks'
                         if let scene = EndGameLost(fileNamed: "EndGameLost") {
                             // Set the scale mode to scale to fit the window
-                            scene.scaleMode = .aspectFill
+                            scene.scaleMode = .aspectFit
                             
                             // Present the scene
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -398,7 +398,7 @@ class Pong: SKScene, SKPhysicsContactDelegate {
                 // Load the SKScene from 'GameOverScene'
                 if let scene = EndGameLost(fileNamed: "EndGameLost") {
                     // Set the scale mode to scale to fit the window
-                    scene.scaleMode = .aspectFill
+                    scene.scaleMode = .aspectFit
                     
                     // Present the scene
                     view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
@@ -416,7 +416,7 @@ class Pong: SKScene, SKPhysicsContactDelegate {
                 // Load the SKScene from 'WinningSceneClass'
                 if let scene = WinningSceneClass(fileNamed: "WinningScene") {
                     // Set the scale mode to scale to fit the window
-                    scene.scaleMode = .aspectFill
+                    scene.scaleMode = .aspectFit
                     
                     // Present the scene
                     view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
