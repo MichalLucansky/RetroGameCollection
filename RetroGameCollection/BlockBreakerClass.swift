@@ -296,7 +296,8 @@ class BlockBreaker: SKScene, SKPhysicsContactDelegate{
         if ball.position.y < playerPadle.position.y {
             gameId.set(1, forKey: "ID")
             BlockBreaker.scoreToPass = score
-            if highScore.integer(forKey: "highScore") < score{
+            if highScore.integer(forKey: "highScore") < score {
+                GameCenterManager.instance.saveScore(score: score, leaderBoardId: .blockBreaker)
                 highScore.set(score, forKey: "highScore")
                 
             }

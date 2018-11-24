@@ -514,6 +514,7 @@ class GameScene: SKScene {
             if node.position == self.snake[0].position{
                 self.gameId.set(3, forKey: "ID")
                 if self.snakeScore.integer(forKey: "Snake") < self.score{
+                    GameCenterManager.instance.saveScore(score: self.score, leaderBoardId: .snake)
                     self.snakeScore.set(self.score, forKey: "Snake")
                     
                 }

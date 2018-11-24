@@ -8,8 +8,8 @@
 
 import SpriteKit
 
-
 class BlockBreakerGameOver: SKScene {
+    
     private  var backgroundMusic: SKAudioNode!
     private var soundStatus = UserDefaults.standard
     private var highScore = UserDefaults.standard
@@ -28,7 +28,7 @@ class BlockBreakerGameOver: SKScene {
             }
         }
         
-        
+        AskForRatingManager.instance.showReview()
         let id = gameId.integer(forKey: "ID")
         
         if id == 1{
@@ -40,8 +40,6 @@ class BlockBreakerGameOver: SKScene {
             
             actualScore = highScore.integer(forKey: "Snake")
         }
-        
-        
         
         highScoreLabel = self.childNode(withName: "highScore") as! SKLabelNode
         playAgainLabel = self.childNode(withName: "PlayAgainLabel") as! SKLabelNode
@@ -56,16 +54,8 @@ class BlockBreakerGameOver: SKScene {
         
         for touch in touches{
             let location = touch.location(in: self)
-            
-            
-            
             if let touchName = atPoint(location).name{
-                
-                
-                
-                
                 switch touchName {
-                    
                     
                 case "PlayAgainLabel":
                     
@@ -80,10 +70,8 @@ class BlockBreakerGameOver: SKScene {
                                 
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))                        }
-                            
-                            
                         }
-                    }else if id == 2{
+                    } else if id == 2{
                         SpaceInvadersClass.lvl = 1
                         if let view = self.view {
                             
@@ -95,11 +83,9 @@ class BlockBreakerGameOver: SKScene {
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                             }
-                            
-                            
                         }
                         
-                    }else{
+                    } else {
                         if let view = self.view {
                             
                             // Load the SKScene from 'GameScene.sks'
@@ -110,13 +96,7 @@ class BlockBreakerGameOver: SKScene {
                                 // Present the scene
                                 view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                             }
-                            
-                            
                         }
-                        
-                        
-                        
-                        
                     }
                 case "BackToMenu" :
                     if let view = self.view {
@@ -124,25 +104,12 @@ class BlockBreakerGameOver: SKScene {
                             scene.scaleMode = .aspectFit
                             view.presentScene(scene,transition: SKTransition.moveIn(with: SKTransitionDirection.left, duration: TimeInterval(0.5)))
                         }
-                        
-                        
                     }
                 default:
                     break
                 }
-                
-                
-                
-                
-                
-                
             }
-            
-            
-            
         }
-        
     }
-    
 }
 

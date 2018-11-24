@@ -6,5 +6,6 @@ target 'RetroGameCollection' do
 use_frameworks!
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'Firebase/Core'
 
 end
