@@ -28,7 +28,7 @@ class BlockBreakerGameOver: SKScene {
             }
         }
         
-        AskForRatingManager.instance.showReview()
+        RateAlertManager.shared.checkIfShowAlertNow()
         let id = gameId.integer(forKey: "ID")
         
         if id == 1{

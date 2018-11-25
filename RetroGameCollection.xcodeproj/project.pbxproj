@@ -54,7 +54,11 @@
 		375DE7D321A96C1500726665 /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DE7D221A96C1500726665 /* GameCenterManager.swift */; };
 		375DE7D521A96C3600726665 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375DE7D421A96C3600726665 /* GameKit.framework */; };
 		377F081E21A9C9AB005D1302 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 377F081D21A9C9AA005D1302 /* GoogleService-Info.plist */; };
-		377F082021A9D512005D1302 /* AskForRatingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F081F21A9D512005D1302 /* AskForRatingManager.swift */; };
+		377F083A21AAAA7D005D1302 /* RateAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F083421AAAA7D005D1302 /* RateAlertViewController.swift */; };
+		377F083B21AAAA7D005D1302 /* RateAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F083521AAAA7D005D1302 /* RateAlertManager.swift */; };
+		377F083C21AAAA7D005D1302 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377F083721AAAA7D005D1302 /* Media.xcassets */; };
+		377F083D21AAAA7D005D1302 /* RateAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377F083821AAAA7D005D1302 /* RateAlert.storyboard */; };
+		377F083E21AAAA7D005D1302 /* RateManagerSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F083921AAAA7D005D1302 /* RateManagerSetUp.swift */; };
 		62D2D3A68AA2718574E97BF0 /* Pods_RetroGameCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7218E25DBA38C1F6190AFD5D /* Pods_RetroGameCollection.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,7 +126,11 @@
 		375DE7D221A96C1500726665 /* GameCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterManager.swift; sourceTree = "<group>"; };
 		375DE7D421A96C3600726665 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		377F081D21A9C9AA005D1302 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		377F081F21A9D512005D1302 /* AskForRatingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskForRatingManager.swift; sourceTree = "<group>"; };
+		377F083421AAAA7D005D1302 /* RateAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAlertViewController.swift; sourceTree = "<group>"; };
+		377F083521AAAA7D005D1302 /* RateAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAlertManager.swift; sourceTree = "<group>"; };
+		377F083721AAAA7D005D1302 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		377F083821AAAA7D005D1302 /* RateAlert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RateAlert.storyboard; sourceTree = "<group>"; };
+		377F083921AAAA7D005D1302 /* RateManagerSetUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateManagerSetUp.swift; sourceTree = "<group>"; };
 		7218E25DBA38C1F6190AFD5D /* Pods_RetroGameCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetroGameCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8AAB5F98DD5CE401C2282A /* Pods-RetroGameCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroGameCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-RetroGameCollection/Pods-RetroGameCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +169,7 @@
 		374286B21EEFD63E001CFF2F /* RetroGameCollection */ = {
 			isa = PBXGroup;
 			children = (
+				377F083221AAAA7D005D1302 /* AppRatingController */,
 				374287561EEFF0CF001CFF2F /* Classes */,
 				3742873A1EEFD951001CFF2F /* Font */,
 				374286DA1EEFD8D6001CFF2F /* Main Menu */,
@@ -211,7 +220,6 @@
 			children = (
 				374286D81EEFD8B4001CFF2F /* Utilities.swift */,
 				375DE7D221A96C1500726665 /* GameCenterManager.swift */,
-				377F081F21A9D512005D1302 /* AskForRatingManager.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -397,6 +405,34 @@
 			name = "WiningScene Pong";
 			sourceTree = "<group>";
 		};
+		377F083221AAAA7D005D1302 /* AppRatingController */ = {
+			isa = PBXGroup;
+			children = (
+				377F083321AAAA7D005D1302 /* Classes */,
+				377F083621AAAA7D005D1302 /* Assets */,
+				377F083921AAAA7D005D1302 /* RateManagerSetUp.swift */,
+			);
+			path = AppRatingController;
+			sourceTree = "<group>";
+		};
+		377F083321AAAA7D005D1302 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				377F083421AAAA7D005D1302 /* RateAlertViewController.swift */,
+				377F083521AAAA7D005D1302 /* RateAlertManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		377F083621AAAA7D005D1302 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				377F083721AAAA7D005D1302 /* Media.xcassets */,
+				377F083821AAAA7D005D1302 /* RateAlert.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		69CFBD32E8C5D889EB949A29 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +537,7 @@
 				374286BF1EEFD63E001CFF2F /* Main.storyboard in Resources */,
 				374286C11EEFD63E001CFF2F /* Assets.xcassets in Resources */,
 				3742874A1EEFD986001CFF2F /* 02 HHavok-main.mp3 in Resources */,
+				377F083C21AAAA7D005D1302 /* Media.xcassets in Resources */,
 				374287901EEFF9EA001CFF2F /* WinningScene.sks in Resources */,
 				3742874B1EEFD986001CFF2F /* Prologue.mp3 in Resources */,
 				374286C41EEFD63E001CFF2F /* LaunchScreen.storyboard in Resources */,
@@ -511,6 +548,7 @@
 				3742874E1EEFD986001CFF2F /* 10 Arpanauts.mp3 in Resources */,
 				374287C71EF043E8001CFF2F /* LCDPHONE.TTF in Resources */,
 				374287491EEFD986001CFF2F /* 08 Ascending.mp3 in Resources */,
+				377F083D21AAAA7D005D1302 /* RateAlert.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,10 +618,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3742877D1EEFF8B5001CFF2F /* Enemy.swift in Sources */,
+				377F083E21AAAA7D005D1302 /* RateManagerSetUp.swift in Sources */,
 				374287771EEFF3B3001CFF2F /* Ball.swift in Sources */,
 				374286D91EEFD8B4001CFF2F /* Utilities.swift in Sources */,
 				374287661EEFF298001CFF2F /* BlockBreakerClass.swift in Sources */,
 				374287611EEFF1E1001CFF2F /* SpaceInvadersClass.swift in Sources */,
+				377F083A21AAAA7D005D1302 /* RateAlertViewController.swift in Sources */,
 				374287921EEFFA00001CFF2F /* WinningScene.swift in Sources */,
 				374286D41EEFD834001CFF2F /* Settings.swift in Sources */,
 				3742877A1EEFF875001CFF2F /* Player.swift in Sources */,
@@ -592,11 +632,11 @@
 				374287881EEFF96D001CFF2F /* PongMultiSingleSel.swift in Sources */,
 				374287551EEFD9EF001CFF2F /*  GameViewController.swift in Sources */,
 				374287831EEFF91E001CFF2F /* Pong.swift in Sources */,
+				377F083B21AAAA7D005D1302 /* RateAlertManager.swift in Sources */,
 				3742878D1EEFF9BB001CFF2F /* EndGame.swift in Sources */,
 				374287531EEFD9C2001CFF2F /* AppDelegate.swift in Sources */,
 				374287741EEFF375001CFF2F /* BlockBreakerGameOver.swift in Sources */,
 				3705F021214E44D6006041DA /* LoadingScene.swift in Sources */,
-				377F082021A9D512005D1302 /* AskForRatingManager.swift in Sources */,
 				3742875C1EEFF11B001CFF2F /* GameScene.swift in Sources */,
 				3742876F1EEFF31E001CFF2F /* NextLvlClass.swift in Sources */,
 				374286DC1EEFD8F9001CFF2F /* MainMenu.swift in Sources */,
